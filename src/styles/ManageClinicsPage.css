@@ -163,37 +163,26 @@
   color: #e74c3c;
 }
 
-.verification-badge {
-  padding: 0.375rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.verification-badge.verified {
+.status-badge.verified {
   background: rgba(52, 152, 219, 0.1);
   color: #3498db;
 }
 
-.verification-badge.unverified {
+.status-badge.unverified {
   background: rgba(243, 156, 18, 0.1);
   color: #f39c12;
 }
 
-/* Status and verification control containers */
-.status-control,
-.verification-control {
+/* Status control container */
+.status-control {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
 }
 
-/* Dropdown styling */
-.status-dropdown,
-.verification-dropdown {
+/* Status dropdown styling */
+.status-dropdown {
   padding: 0.5rem 0.75rem;
   border: 2px solid #e9ecef;
   border-radius: 8px;
@@ -212,51 +201,18 @@
   padding-right: 2.5rem;
 }
 
-.status-dropdown:hover,
-.verification-dropdown:hover {
+.status-dropdown:hover {
   border-color: #16a085;
   box-shadow: 0 0 0 3px rgba(22, 160, 133, 0.1);
 }
 
-.status-dropdown:focus,
-.verification-dropdown:focus {
+.status-dropdown:focus {
   outline: none;
   border-color: #16a085;
   box-shadow: 0 0 0 3px rgba(22, 160, 133, 0.2);
 }
 
-/* Status-specific dropdown styling */
-.status-dropdown {
-  border-color: #27ae60;
-}
-
-.status-dropdown:hover {
-  border-color: #219a52;
-  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
-}
-
-.status-dropdown:focus {
-  border-color: #219a52;
-  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
-}
-
-/* Verification-specific dropdown styling */
-.verification-dropdown {
-  border-color: #3498db;
-}
-
-.verification-dropdown:hover {
-  border-color: #2980b9;
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
-}
-
-.verification-dropdown:focus {
-  border-color: #2980b9;
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
-}
-
-
-
+/* Action buttons */
 .action-buttons {
   display: flex;
   gap: 0.5rem;
@@ -330,13 +286,11 @@
     padding: 0.75rem 0.5rem;
   }
 
-  .status-control,
-  .verification-control {
+  .status-control {
     align-items: center;
   }
   
-  .status-dropdown,
-  .verification-dropdown {
+  .status-dropdown {
     min-width: 100px;
     font-size: 0.8rem;
   }
@@ -355,13 +309,11 @@
     min-width: 900px;
   }
   
-  .status-control,
-  .verification-control {
+  .status-control {
     gap: 0.25rem;
   }
   
-  .status-dropdown,
-  .verification-dropdown {
+  .status-dropdown {
     min-width: 90px;
     font-size: 0.75rem;
     padding: 0.375rem 0.5rem;
