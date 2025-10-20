@@ -132,7 +132,7 @@ const ManageClinicsPage = () => {
                   <th>Location</th>
                   <th>Contact</th>
                   <th>Status</th>
-                  <th>Actions</th>
+                  {/* <th>Actions</th> */}
                 </tr>
               </thead>
               <tbody>
@@ -171,7 +171,7 @@ const ManageClinicsPage = () => {
                         </select>
                       </div>
                     </td>
-                    <td>
+                    {/* <td>
                       <div className="action-buttons">
                         <button
                           className="view-btn"
@@ -184,7 +184,7 @@ const ManageClinicsPage = () => {
                           </svg>
                         </button>
                       </div>
-                    </td>
+                    </td> */}
                   </tr>
                 ))}
               </tbody>
